@@ -36,7 +36,7 @@ def get_occupation(data, hometown)
   data.each do |key, value|
     value.each do |i|
       if i["hometown"] == hometown
-        return index["occupation"]
+        return i["occupation"]
       end
     end
   end
